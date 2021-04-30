@@ -75,7 +75,7 @@ int main()
 					delay(0.5);
 					system("clear");
 					printf("================\n");
-					printf("| incorrect!!! |\n");
+					printf("| Incorrect!!! |\n");
 					printf("================\n");
 					delay(1);
 					system("clear");
@@ -91,7 +91,7 @@ int main()
 				delay(0.5);
 				system("clear");
 				printf("==============\n");
-				printf("| correct!!! |\n");
+				printf("| Correct!!! |\n");
 				printf("==============\n");
 				delay(1);
 				system("clear");
