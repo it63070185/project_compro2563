@@ -1,0 +1,250 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+.clearfix {
+    clear: both;
+}
+
+.container-d{
+    width: 960px;
+    margin: 0 auto;
+}
+.menubar-d{
+    width: 100%;
+    height: 50px;
+    color: white;
+    background:#333;
+    box-shadow: 0 0 20px rgb(8, 8, 8);
+}
+.menubar-d .logo{
+    float: left;
+}
+
+.menubar-d h1{
+    margin: 0;
+    font-size: 24px;
+    font-weight: normal;
+    padding-top: 10px;
+}
+.menubar-d ul.menu-d {
+    list-style: none;
+    float: right;
+}
+
+.menubar-d ul.menu-d li {
+    float: left;
+    margin-right: 20px;
+}
+
+.menubar-d ul.menu-d li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.menubar-d ul.menu-d li a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+    padding-bottom: 0px;
+}
+
+
+.member {
+    width: auto;
+    
+    height: 20px;
+    text-align: left;
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    
+    color: black;
+    transition: all 1s ease;
+}
+.image {
+    color: black;
+    text-align: center;
+    margin: 0;
+}
+.image li{
+    margin-left: 35px;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+    transition: all 1s ease;
+}
+.box {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    margin-top: -50px;
+    margin-left: -70px;
+    max-width: 800px;
+    max-height: 220px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #333;
+    text-align: left;
+    color: white;
+    transition: all 1s ease;
+}
+.box h2{
+    text-align: left;
+    margin-top: 0px;
+}
+.box-2{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    margin-top: -50px;
+    margin-left: -70px;
+    width: 790px;
+    height: 250px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #333;
+    opacity: 50%;
+    transition: all 1s ease;
+}
+.game{
+    position: absolute;
+    left: 66%;
+    top: 29%
+}
+.text-in{
+    position: absolute;
+    left: 78%;
+    top: 42%
+}
+.game :hover{
+    opacity: 10%;
+
+}
+.how{
+    position: absolute;
+    top:750px;
+    text-align: left;
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    transition: all 1s ease;
+}
+.image1{
+    display: inline-block;
+    width: 1290px;
+    height: 300px;
+    padding: 50px;
+    background:#333;
+}
+.image1 p{
+    position: absolute;
+    margin-left: 20px;
+    left: 50%;
+    top: 12%;
+    width: 500px;
+    color: white;
+}
+.image2{
+    display: inline-block;
+    width: 1290px;
+    height: 300px;
+    padding: 50px;
+    text-align: right;
+}
+.image2 p{
+    text-align: left;
+    position: absolute;
+    margin-left: 20px;
+    right: 60%;
+    top: 30%;
+    width: 500px;
+    color: black;
+}
+.image3{
+    display: inline-block;
+    width: 1290px;
+    height: 300px;
+    padding: 50px;
+    background:#333;
+}
+.image3 p{
+    position: absolute;
+    margin-left: 20px;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    color: white;
+}
+.image4{
+    display: inline-block;
+    width: 1290px;
+    height: 300px;
+    padding: 50px;
+    text-align: right;
+}
+.image4 p{
+    text-align: left;
+    position: absolute;
+    margin-left: 20px;
+    right: 60%;
+    top: 66%;
+    width: 500px;
+    color: black;
+}
+.image5{
+    display: inline-block;
+    width: 1290px;
+    height: 300px;
+    padding: 50px;
+    background:#333;
+}
+.image5 p{
+    position: absolute;
+    margin-left: 20px;
+    left: 50%;
+    top: 85%;
+    width: 500px;
+    color: white;
+}
+
+.source{
+    position: absolute;
+    top:3000px;
+    text-align: left;
+    padding: 60px;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    transition: all 1s ease;
+}
+
+.textbox{
+    background: white;
+    border: none;
+    padding: 5px;
+    width: 500px;
+    height: 400px;
+    overflow: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
