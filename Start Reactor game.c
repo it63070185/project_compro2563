@@ -16,6 +16,9 @@ int main()
 	int i = 0;
 	int check = 1;
 	char end[1] = "n";
+
+	// display "kmitl"
+
 	printf("==============================\n");
 	printf("|                            |\n");
 	printf("| *  *  ** **  * ***** *     |\n");
@@ -26,27 +29,43 @@ int main()
 	printf("==============================\n");
 	delay(2);
 	system("clear");
+
+	// display example input
+
 	printf("=========================================\n");
 	printf("|Example input answer                   |\n");
 	display(10);
 	printf("|Input 2 answer: 0 4                    |\n");
 	printf("|Warning!!! Do not input while hinting. |\n");
 	printf("========================================\n");
+
+	// scanf for start mini game
+
 	printf("Input some keys to start >>");
 	scanf("%s", txt);
 	delay(0.5);
 	system("clear");
-	while(1 == 1){
-		if(end[0] == 'y'){
+
+	// main loop Game
+
+	while(1 == 1){ // 1==1 --> True
+		if(end[0] == 'y'){ // เช็คว่าจะเล่นอีกรอบหรือไม่
 			break;
 		}
 		i = 0;
+
+		// รอบในการเล่น
+
 		while(i < 5){
+			// random เลข
 			if(check == 1){
 				srand(time(NULL));
 				r = rand() % 9;
 				bucket[i] = r;
 			}
+
+			// จัดเก็บเลขที่ random และ แสดง display ตามที่กำหนด
+
 			for (int j = 0; j <= i; ++j)
 			{
 				printf("round:%d\n", i+1);
@@ -59,6 +78,9 @@ int main()
 				system("clear");
 			}
 			printf("round:%d\n", i+1);
+
+			// รับ input เพือ เทียบกับเลขที่ random
+
 			display(10);
 			for (int j = 0; j <= i; ++j)
 			{
@@ -68,6 +90,9 @@ int main()
 				}
 				scanf("%d", &ans[j]);
 			}
+
+			// check ว่าถูกหรือผิด
+
 			for (int j = 0; j <= i; ++j)
 			{
 				// printf("%d %d\n", bucket[j], ans[j]);
@@ -75,7 +100,7 @@ int main()
 					delay(0.5);
 					system("clear");
 					printf("================\n");
-					printf("| Incorrect!!! |\n");
+					printf("| incorrect!!! |\n");
 					printf("================\n");
 					delay(1);
 					system("clear");
@@ -91,12 +116,15 @@ int main()
 				delay(0.5);
 				system("clear");
 				printf("==============\n");
-				printf("| Correct!!! |\n");
+				printf("| correct!!! |\n");
 				printf("==============\n");
 				delay(1);
 				system("clear");
 			}
 		}
+
+		// printf ว่าชนะและถามว่าจะเล่นอีกรอบไหม
+
 		printf("==============\n");
 		printf("| You win!!! |\n");
 		printf("==============\n");
@@ -108,6 +136,8 @@ int main()
 	}
     return 0;
 }
+
+// ฟังชั่น delay
 
 void delay(int number_of_seconds)
 {
@@ -123,6 +153,10 @@ void delay(int number_of_seconds)
 }
 // printf [0] [1] [2]
 // Ans: T --> i+1  check = 1 F -->  check = 0
+
+// Display รูปแบบต่างๆ
+
+
 void display(int num)
 {
 	switch(num)
