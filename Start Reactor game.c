@@ -11,6 +11,7 @@ int main()
 	char txt[3];
 	int r;
 	int bucket[5];
+	char str_bucket[5];
 	int ans[5];
 	system("clear");
 	int i = 0;
@@ -89,6 +90,9 @@ int main()
 					printf("Input %d answer: ", i+1);
 				}
 				scanf("%d", &ans[j]);
+				if(ans[j] > 9 || ans[j] < 0){
+					break;
+				}
 			}
 
 			// check ว่าถูกหรือผิด
@@ -128,7 +132,7 @@ int main()
 		printf("==============\n");
 		printf("| You win!!! |\n");
 		printf("==============\n");
-		printf("close game(y/n) >>");
+		printf("y to close  game or Input some keys to play again >>");
 		scanf("%s", end);
 		tolower(end[0]);
 		system("clear");
